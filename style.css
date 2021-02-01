@@ -281,8 +281,13 @@
     color: #FBFBFB;
 }
 
-.footer__center {
-    position: relative;
+.subscribe {
+    height: 448px;
+    background: url(img/footer_center-background.png) bottom;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .footer-img__backround {
@@ -291,16 +296,12 @@
     height: 100%;
 }
 
-.footer__center-block {
-    position: absolute;
-    top: 0;
+.subscribe__left {
+    width: 50%;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin: 86px 230px;
-    gap: 326px;
-}
-
-.footer__center-items {
 }
 
 .footer-img__center {
@@ -308,6 +309,7 @@
 }
 
 .footer-img__text {
+    width: 400px;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -317,7 +319,21 @@
     color: #222224;
 }
 
-.footer__center-form {
+.subscribe__right {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .footer__form-header {
@@ -335,15 +351,39 @@
     font-size: 18px;
     line-height: 167.2%;
     text-align: center;
-    color: #222224;
+    margin-bottom: 32px;
+}
+
+.subscribe__form {
+    display: flex;
 }
 
 .footer__input {
     background: #E1E1E1;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    height: 49px;
+    width: 256px;
+    border: none;
+    outline: none;
+    padding-left: 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .footer__button {;
     background: #F16D7F;
+    width: 100px;
+    height: 49px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border: none;
+    outline: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .footer__bottom {
@@ -361,4 +401,25 @@
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
+}
+
+.arrivals {
+    height: 148px;
+    display: flex;
+    justify-content: space-between;
+    background: url(img/arrivals-background.png);
+}
+
+.arrivals_header {
+    width: 100%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.nav {
+    width: 100%;    
 }

@@ -1,0 +1,208 @@
+=flexSB()
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.arrivals
+    height: 148px
+    background: url(img/arrivals-background.png)
+    +flexSB()
+
+    &_header
+        align-self: center
+        width: 100%
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: $colorSelect
+
+.nav
+    width: 100%
+    align-self: center
+    justify-content: right
+
+.breadcrumb
+    display: flex
+    justify-content: flex-end
+    list-style-type: none
+    gap: 4px
+
+a
+    text-decoration: none
+    color: #636363
+
+    &-item
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+
+.active
+    color: $colorSelect
+    font-weight: bold
+    font-family: Lato
+    font-style: normal
+
+.sort-box
+    display: flex
+    gap: 370px
+    padding-top: 51px
+    padding-bottom: 64px
+
+    &__filter
+        position: relative
+
+    &__trending
+        display: flex
+        width: 100%
+        gap: 48px
+        position: absolute
+        padding: 13px 320px
+
+    &__text
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+
+.filter
+    width: 300px
+    padding: 13px 0px 16px
+    position: absolute
+    z-index: 1
+
+    &__name
+        color: $colorSelect
+        font-family: Lato
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+
+    &__img
+        color: $colorSelect
+        margin-left: 11px
+
+    &__category
+        margin-top: 16px
+        padding-left: 11px
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: $colorSelect
+        height: 37px
+        line-height: 37px
+        border-left: 5px solid $colorSelect
+
+    &__ul
+        padding-top: 24px
+        padding-left: 11px
+        list-style-type: none
+
+    &__li
+        padding-bottom: 11px
+
+    &__link
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+
+    &__link:hover
+        color: $colorSelect
+
+    &[open]
+        width: 360px
+        -webkit-box-sizing: border-box
+        box-sizing: border-box
+        background: #FFFFFF
+        -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+.trending
+
+    &__img
+        padding-left: 10px
+
+    &__size
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+
+        &[open]
+            font-family: Lato
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            color: #6F6E6E
+            width: 79px
+            height: 100%
+            left: 771px
+            top: 296px
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+.size
+
+    &__nav
+
+    &__check
+        margin-left: 10px
+        margin-right: 10px
+
+summary
+    display: block
+    outline: none
+
+    &::-webkit-details-marker
+        display: none
+
+.navigation
+    display: flex
+    justify-content: center
+    margin-top: 48px
+    margin-bottom: 96px
+
+    &__border
+        width: 282px
+        height: 42px
+        border: 1px solid #EBEBEB
+        background: #FFFFFF
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__text
+        width: 100%
+        text-align: center
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+
+    &__one
+        text-align: center
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #EF5B70
+
+    &__img
+        padding-left: 16px
+        padding-right: 16px
